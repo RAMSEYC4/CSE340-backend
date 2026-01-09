@@ -4,3 +4,242 @@
 *:after {
   box-sizing: border-box;
 }
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =================================
+   LAYOUT - Wrapper & Main
+   ================================= */
+#wrapper {
+  width: 100%;
+}
+
+main {
+  border: 1px solid #000;
+  width: 100%;
+  height: fit-content;
+}
+
+/* =================================
+   HEADER
+   ================================= */
+header {
+  border: 1px solid #000;
+}
+
+#top-header {
+  background-color: white;
+  border-top: 5px solid #4a90e2;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siteName {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.siteName a {
+  color: #333;
+  text-decoration: none;
+}
+
+.siteName a:hover {
+  color: #4a90e2;
+}
+
+#tools a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#tools a:hover {
+  color: #4a90e2;
+}
+
+/* =================================
+   NAVIGATION
+   ================================= */
+nav {
+  background-color: #1a1a2e;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 0.75rem 2rem;
+  color: white;
+  cursor: pointer;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav li:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav li:hover {
+  background-color: #2d4059;
+}
+
+nav li:active {
+  background-color: #4a90e2;
+}
+
+/* =================================
+   HERO SECTION
+   ================================= */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 8rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.car-info h2 {
+  color: #00bcd4;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.car-info p {
+  color: #00bcd4;
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.cta-button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #0097a7;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =================================
+   HERO-2 SECTION (Upgrades & Reviews)
+   ================================= */
+.hero-2 {
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.content-section {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Upgrades Section --- */
+.upgrades-section {
+  flex: 1;
+}
+
+.upgrades-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.item-container {
+  text-align: center;
+}
+
+.item-container a {
+  margin: 0 auto;
+  color: #4a5bff;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.item-container a:hover {
+  color: #2a3bdd;
+}
+
+.upgrade-item {
+  background-color: #00bcd4;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upgrade-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* --- Reviews Section --- */
+.reviews-section {
+  flex: 1;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews-list li {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
