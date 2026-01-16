@@ -10,8 +10,8 @@
       "previewLimit": 50,
       "server": "localhost",
       "driver": "PostgreSQL",
-      "name": "motorcar_database_2vu0",
-      "connectString": "postgresql://motorcar_database:2FKr3u7avbd7HoqZp6yqmLKiLpdHm6o7@dpg-d5l9d6shg0os73c4orl0-a.frankfurt-postgres.render.com/motorcar_database_2vu0"
+      "connectString": "postgresql://motorcar_database:r0esBuwwebeD76NfR10xdzTG1J5QHGmJ@dpg-d5laauali9vc73c2vs3g-a.frankfurt-postgres.render.com/motorcar_database_2vu0_c1ja",
+      "name": "motorcar_database_2vu0_c1ja"
     }
   ]
 }
