@@ -26,10 +26,10 @@ app.use(static)
 /* ***********************
 * Express Error Handler
 * Place after all other middleware
+console.error(`Error at: "${req.originalUrl}": ${err.message}`)
 *************************/
 app.use(async (err, req, res, next) => {
   let nav = await utilities.getNav()
-  console.error(`Error at: "${req.originalUrl}": ${err.message}`)
   res.render("errors/error", {
     title: err.status || 'Server Error',
     message: err.message,
